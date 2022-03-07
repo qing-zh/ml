@@ -15,15 +15,15 @@ class BinaryClassificationPerformance():
   
     def compute_measures(self):
         '''Compute performance measures defined by Flach p. 57'''
-        self.performance_measures['Pos'] = self.performance_df['labls'].sum()
-        self.performance_measures['Neg'] = self.performance_df['labls'].shape[0] - self.performance_df['labls'].sum()
-        self.performance_measures['TP'] = ((self.performance_df['preds'] == True) & (self.performance_df['labls'] == True)).sum()
+        self.performance_measures['Pos'] = self.performance_df['labls'].sum()  #number of positives
+        self.performance_measures['Neg'] = self.performance_df['labls'].shape[0] - self.performance_df['labls'].sum()  #number of negatives
+        self.performance_measures['TP'] = ((self.performance_df['preds'] == True) & (self.performance_df['labls'] == True)).sum() #number of true positives
         self.performance_measures['TN'] = ((self.performance_df['preds'] == False) & (self.performance_df['labls'] == False)).sum()
         self.performance_measures['FP'] = ((self.performance_df['preds'] == True) & (self.performance_df['labls'] == False)).sum()
         self.performance_measures['FN'] = ((self.performance_df['preds'] == False) & (self.performance_df['labls'] == True)).sum()
         self.performance_measures['Accuracy'] = (self.performance_measures['TP'] + self.performance_measures['TN']) / (self.performance_measures['Pos'] + self.performance_measures['Neg'])
-        self.performance_measures['Precision'] = self.performance_measures['TP'] / (self.performance_measures['TP'] + self.performance_measures['FP'])
-        self.performance_measures['Recall'] = self.performance_measures['TP'] / self.performance_measures['Pos']
+        self.performance_measures['Precision'] = self.performance_measures['TP'] / (self.performance_measures['TP'] + self.performance_measures['FP']) #confidence
+        self.performance_measures['Recall'] = self.performance_measures['TP'] / self.performance_measures['Pos'] #true positive rate, sensitivity
         self.performance_measures['desc'] = self.desc
 
     def img_indices(self):
