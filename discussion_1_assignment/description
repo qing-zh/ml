@@ -1,1 +1,5 @@
 This is the assignment folder for Machine Learning canvas discussion 1
+
+I changed the n_features of HashingVectorizer function from 2**17 to 2**18 because movie reviews is not a huge database, 
+so I think the predict result would be more accurate while increasing the number of features. 
+The performance of different models are better in general, but the result of the best-performed model is worse, surprisingly. 
