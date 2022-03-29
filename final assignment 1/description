@@ -1,5 +1,9 @@
 This is the assignment file for final assignment 1 of Machine Learning class. 
 
-I started with changing the n_features in the process_raw_data function. I found that the smaller the n_features is, the better the training set performs, but the perforance is worse for the test set. Then I make the n_features value bigger. The performance for each model is better generally. However the resul for the best performed model is worse. 
+I started with changing the n_features in the process_raw_data function. 
+I found that the smaller the n_features is, the better the training set performs, but the perforance is worse for the test set. 
+Then I make the n_features value bigger. The performance for each model is better generally. 
+However the resul for the best performed model is worse. 
 
-I tried adding a "!" count on the X side of equation, but the result doesn't change a lot. Then I changed the ngram_range, and the performance finally improves a little. 
+I tried adding a "!" count on the X side of equation, but the result doesn't change a lot. 
+Then I changed the ngram_range, and the performance finally improves a little. 
