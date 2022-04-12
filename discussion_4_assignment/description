@@ -1,1 +1,1 @@
-
+I used the plane data found in the images_starter file because I kept getting error message that image is missing. I changed the sigma value in canny module. I noticed that the smaller the sigma value is, the better the training set performs, however it is the opposite for the test set. 
