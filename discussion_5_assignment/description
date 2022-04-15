@@ -1,0 +1,1 @@
+I started with changing the number of neurons in the first layer. The result is quite similar. Then I let the neurons in each layers remained the same and add layers to the network. It turns out that the model with multiple layers perform better generally.
