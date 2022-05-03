@@ -1,0 +1,1 @@
+I deleted position and texture variables because I think the location of objects doesn’t matter in art works, and you can’t tell the texture of paintings in small pictures. According to the plot inertia scores, the optimal k value should be in between 5 and 25. After creating silhouette plots, I chose 10 as the number of clusters, as it got the best result. 
