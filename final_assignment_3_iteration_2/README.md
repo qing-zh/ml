@@ -1,0 +1,1 @@
+According to the result of first iteration, the optimal k value should be in between 5 and 15. I tried different n_clusters values from 5 to 15, and I got the best result when the n_clusters value is 14. 
